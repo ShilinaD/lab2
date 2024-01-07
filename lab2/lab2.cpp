@@ -3,6 +3,24 @@
 int main()
 {
 	setlocale(LC_ALL, "ru");
+
+	// Демонстрация перемещения
+	Lab2::Wagon first_wagon;
+	Lab2::Wagon second_wagon;
+	first_wagon.CreateWagon(60, 55, Lab2::WagonType::ECONOMY);
+	second_wagon.CreateWagon(55, 10, Lab2::WagonType::ECONOMY);
+	std::cout << "До перемещения:" << std::endl;
+	first_wagon.Get_Info();
+	first_wagon.Get_Percent_Taken();
+	second_wagon.Get_Info();
+	second_wagon.Get_Percent_Taken();
+	first_wagon >> second_wagon;
+	std::cout << "После перемещения:" << std::endl;
+	first_wagon.Get_Info();
+	first_wagon.Get_Percent_Taken();
+	second_wagon.Get_Info();
+	second_wagon.Get_Percent_Taken();
+
 	while (true) {
 		// Вывод меню программы
 		PrintMenu();
@@ -23,9 +41,7 @@ int main()
 	}
 	
 
-	//Lab2::Wagon first_wagon;
-	//Lab2::Wagon second_wagon;
-	//
+	
 
 	//first_wagon.CreateWagon(45, 15, Lab2::WagonType::ECONOMY);
 	//first_wagon.Get_Info();

@@ -78,7 +78,6 @@ namespace Lab2 {
 		int Get_Percent_Taken() {
 			int percent_taken;
 			percent_taken = (float(taken) / float(capacity)) * 100;
-			std::cout << "Процент занятости вагона: " << percent_taken << "%" << std::endl;
 			return percent_taken;
 		}
 
@@ -106,7 +105,10 @@ namespace Lab2 {
 			taken -= cout_passenger;
 		}
 
-		/*void operator >> (Wagon& otherWagon) {
+		void operator >> (Wagon& otherWagon) {
+			std::cout << "Процент занятости вагона 1: " << Get_Percent_Taken() << "%" << std::endl;
+			std::cout << "Процент занятости вагона 2: " << otherWagon.Get_Percent_Taken() << "%" << std::endl;
+
 			int percent_this = Get_Percent_Taken();
 			int percent_other = otherWagon.Get_Percent_Taken();
 
@@ -119,16 +121,19 @@ namespace Lab2 {
 				otherWagon.taken += passenger_transfer;
 				std::cout << "Перемещено " << passenger_transfer << " пассажиров из "
 					<< WagonTypeToString(type) << " в " << WagonTypeToString(otherWagon.type) << " вагон" << std::endl;
+				std::cout << "Процент занятости вагона 1: " << Get_Percent_Taken() << "%" << std::endl;
+				std::cout << "Процент занятости вагона 2: " << otherWagon.Get_Percent_Taken() << "%" << std::endl;
+
 			}
 			else {
 				std::cout << "Невозможно переместить пассажиров между этими вагонами." << std::endl;
 			}
-		}*/
+		}
 
 		void Get_Info() 
 		{
 			std::cout << "=============================================" << std::endl;
-			std::cout << "Вагон:" << WagonTypeToString(type) << "\nВместимость:" << capacity << "\nЗанято:" << taken << std::endl;
+			std::cout << "Тип:" << WagonTypeToString(type) << "\nВместимость:" << capacity << "\nЗанято:" << taken << std::endl;
 			std::cout << "=============================================" << std::endl;
 		}
 		

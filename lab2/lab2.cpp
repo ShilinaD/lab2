@@ -39,32 +39,6 @@ int main()
 			std::cout << "Вы можете ввести только числа 1,2 или 3!!!" << std::endl;
 		}
 	}
-	
-
-	
-
-	//first_wagon.CreateWagon(45, 15, Lab2::WagonType::ECONOMY);
-	//first_wagon.Get_Info();
-	//first_wagon.Get_Percent_Taken();
-	///*first_wagon.Boarding(20);
-	//first_wagon.Get_Info();
-	//first_wagon.Get_Percent_Taken();
-	//first_wagon.Вisembarkation(5);
-	//first_wagon.Get_Info();
-	//first_wagon.Get_Percent_Taken();*/
-
-	//second_wagon.CreateWagon(55, 25, Lab2::WagonType::ECONOMY);
-	//second_wagon.Get_Info();
-	//second_wagon.Get_Percent_Taken();
-
-	///*first_wagon >> second_wagon;
-	//std::cout << "DDDD" << std::endl;
-	//first_wagon.Get_Info();
-	//first_wagon.Get_Percent_Taken();
-	//second_wagon.Get_Info();
-	//second_wagon.Get_Percent_Taken();*/
-
-
 
 	return 0;
 }

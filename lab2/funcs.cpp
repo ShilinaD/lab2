@@ -120,17 +120,6 @@ void WagonProgram(void) {
             new_wagon.Get_Percent_Taken();
             new_wagon.Get_Info();
         }
-        /*else if (answer == 5) {
-            Lab_2::Point point;
-            std::string point_description = "";
-            input_point(point, point_description);
-
-            std::cout << "=============================================" << std::endl;
-            std::cout << "Точка 1 = " << point << std::endl;
-            std::cout << "=============================================" << std::endl;
-            std::cout << "Точка 1 после поворта на 90 градусов = " << point.turn_90() << std::endl;
-            std::cout << "=============================================" << std::endl;
-        }*/
        else if (answer == 6) {
             break;
         }
